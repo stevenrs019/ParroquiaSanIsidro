@@ -1,0 +1,101 @@
+﻿@model IEnumerable<SistemaWebParroquia.Models.PrimeraComunion>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Personas)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FechaComunion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LugarComunion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.encargado)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FechaBautizo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LugarBautizo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.libro_P)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.folio_P)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.asiento_P)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.libro_B)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.folio_B)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.asiento_B)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Personas)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FechaComunion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LugarComunion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.encargado)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FechaBautizo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LugarBautizo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.libro_P)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.folio_P)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.asiento_P)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.libro_B)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.folio_B)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.asiento_B)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.ID_comunion">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.ID_comunion">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.ID_comunion">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

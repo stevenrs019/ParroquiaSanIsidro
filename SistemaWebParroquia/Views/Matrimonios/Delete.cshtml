@@ -1,0 +1,291 @@
+﻿@model SistemaWebParroquia.Models.Matrimonios
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Delete</h1>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Matrimonios</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.expediente)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.expediente)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.expediente_registro)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.expediente_registro)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Personas)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Personas)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.FechaMatrimonio)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.FechaMatrimonio)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.LugarMatrimonio)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.LugarMatrimonio)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.presbitero)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.presbitero)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.padre_1)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.padre_1)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.madre_1)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.madre_1)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.padre_2)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.padre_2)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.madre_2)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.madre_2)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.nacionalidad_1)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.nacionalidad_1)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.nacionalidad_2)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.nacionalidad_2)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.profesion_1)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.profesion_1)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.profesion_2)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.profesion_2)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.religion_1)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.religion_1)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.religion_2)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.religion_2)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.nacion_1)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.nacion_1)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.nacion_2)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.nacion_2)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.feligres_1)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.feligres_1)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.feligres_2)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.feligres_2)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.FechaBautizo1)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.FechaBautizo1)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.FechaBautizo2)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.FechaBautizo2)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.LugarBautizo1)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.LugarBautizo1)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.LugarBautizo2)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.LugarBautizo2)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.libro_M)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.libro_M)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.folio_M)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.folio_M)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.asiento_M)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.asiento_M)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.libro_C1)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.libro_C1)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.folio_C1)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.folio_C1)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.asiento_C1)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.asiento_C1)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.libro_C2)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.libro_C2)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.folio_C2)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.folio_C2)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.asiento_C2)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.asiento_C2)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.libro_P1)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.libro_P1)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.folio_P1)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.folio_P1)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.asiento_P1)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.asiento_P1)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.libro_P2)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.libro_P2)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.folio_P2)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.folio_P2)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.asiento_P2)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.asiento_P2)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.libro_B1)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.libro_B1)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.folio_B1)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.folio_B1)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.asiento_B1)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.asiento_B1)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.libro_B2)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.libro_B2)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.folio_B2)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.folio_B2)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.asiento_B2)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.asiento_B2)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="ID_matrimonio" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>

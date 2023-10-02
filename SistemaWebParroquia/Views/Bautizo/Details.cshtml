@@ -1,0 +1,108 @@
+﻿@model SistemaWebParroquia.Models.Bautizo
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Bautizo</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Personas)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Personas)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.FechaBautizo)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.FechaBautizo)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.LugarBautizo)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.LugarBautizo)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.presbitero)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.presbitero)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.padre)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.padre)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.madre)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.madre)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Abuelo_Paterno)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Abuelo_Paterno)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Abuela_Paterno)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Abuela_Paterno)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Abuelo_Materno)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Abuelo_Materno)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Abuela_Materno)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Abuela_Materno)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Padrinos)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Padrinos)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.madrina)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.madrina)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.libro_B)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.libro_B)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.folio_B)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.folio_B)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.asiento_B)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.asiento_B)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.ID_bautizos">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

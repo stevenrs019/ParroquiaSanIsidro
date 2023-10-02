@@ -1,0 +1,98 @@
+﻿@model SistemaWebParroquia.Models.Confirmacion
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Confirmacion</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Personas" class="control-label"></label>
+                <input asp-for="Personas" class="form-control" />
+                <span asp-validation-for="Personas" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FechaConfirmacion" class="control-label"></label>
+                <input asp-for="FechaConfirmacion" class="form-control" />
+                <span asp-validation-for="FechaConfirmacion" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LugarConfirmacion" class="control-label"></label>
+                <input asp-for="LugarConfirmacion" class="form-control" />
+                <span asp-validation-for="LugarConfirmacion" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="encargado" class="control-label"></label>
+                <input asp-for="encargado" class="form-control" />
+                <span asp-validation-for="encargado" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="padrino" class="control-label"></label>
+                <input asp-for="padrino" class="form-control" />
+                <span asp-validation-for="padrino" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="obispo" class="control-label"></label>
+                <input asp-for="obispo" class="form-control" />
+                <span asp-validation-for="obispo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="fechaBautizo" class="control-label"></label>
+                <input asp-for="fechaBautizo" class="form-control" />
+                <span asp-validation-for="fechaBautizo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="lugarBautizo" class="control-label"></label>
+                <input asp-for="lugarBautizo" class="form-control" />
+                <span asp-validation-for="lugarBautizo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="libro_C" class="control-label"></label>
+                <input asp-for="libro_C" class="form-control" />
+                <span asp-validation-for="libro_C" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="folio_C" class="control-label"></label>
+                <input asp-for="folio_C" class="form-control" />
+                <span asp-validation-for="folio_C" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="asiento_C" class="control-label"></label>
+                <input asp-for="asiento_C" class="form-control" />
+                <span asp-validation-for="asiento_C" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="libro_B" class="control-label"></label>
+                <input asp-for="libro_B" class="form-control" />
+                <span asp-validation-for="libro_B" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="folio_B" class="control-label"></label>
+                <input asp-for="folio_B" class="form-control" />
+                <span asp-validation-for="folio_B" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="asiento_B" class="control-label"></label>
+                <input asp-for="asiento_B" class="form-control" />
+                <span asp-validation-for="asiento_B" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

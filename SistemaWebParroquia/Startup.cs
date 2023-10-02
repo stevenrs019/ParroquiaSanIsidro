@@ -9,7 +9,8 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using SistemaWebParroquia.Service;
+using SistemaWebParroquia.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace CosmosDbPeliculas
 {
@@ -27,6 +28,8 @@ namespace CosmosDbPeliculas
         {
             services.AddTransient<ServiceCosmosDb>();
             services.AddControllersWithViews();
+            services.AddDbContext<ParroquiaContext>(options =>
+                    options.UseSqlServer(Configuration.GetConnectionString("ParroquiaContext")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -58,3 +61,4 @@ namespace CosmosDbPeliculas
         }
     }
 }
+  
