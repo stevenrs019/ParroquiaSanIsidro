@@ -1,0 +1,299 @@
+﻿@model IEnumerable<SistemaWebParroquia.Models.Matrimonios>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.expediente)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.expediente_registro)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Personas)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FechaMatrimonio)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LugarMatrimonio)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.presbitero)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.padre_1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.madre_1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.padre_2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.madre_2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.nacionalidad_1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.nacionalidad_2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.profesion_1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.profesion_2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.religion_1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.religion_2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.nacion_1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.nacion_2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.feligres_1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.feligres_2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FechaBautizo1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FechaBautizo2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LugarBautizo1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LugarBautizo2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.libro_M)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.folio_M)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.asiento_M)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.libro_C1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.folio_C1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.asiento_C1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.libro_C2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.folio_C2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.asiento_C2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.libro_P1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.folio_P1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.asiento_P1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.libro_P2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.folio_P2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.asiento_P2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.libro_B1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.folio_B1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.asiento_B1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.libro_B2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.folio_B2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.asiento_B2)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.expediente)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.expediente_registro)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Personas)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FechaMatrimonio)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LugarMatrimonio)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.presbitero)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.padre_1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.madre_1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.padre_2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.madre_2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.nacionalidad_1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.nacionalidad_2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.profesion_1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.profesion_2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.religion_1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.religion_2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.nacion_1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.nacion_2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.feligres_1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.feligres_2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FechaBautizo1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FechaBautizo2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LugarBautizo1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LugarBautizo2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.libro_M)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.folio_M)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.asiento_M)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.libro_C1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.folio_C1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.asiento_C1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.libro_C2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.folio_C2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.asiento_C2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.libro_P1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.folio_P1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.asiento_P1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.libro_P2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.folio_P2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.asiento_P2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.libro_B1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.folio_B1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.asiento_B1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.libro_B2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.folio_B2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.asiento_B2)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.ID_matrimonio">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.ID_matrimonio">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.ID_matrimonio">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

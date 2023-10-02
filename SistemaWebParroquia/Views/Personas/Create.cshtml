@@ -1,0 +1,118 @@
+﻿@model SistemaWebParroquia.Models.Personas
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Personas</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="nombre" class="control-label"></label>
+                <input asp-for="nombre" class="form-control" />
+                <span asp-validation-for="nombre" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="apellido1" class="control-label"></label>
+                <input asp-for="apellido1" class="form-control" />
+                <span asp-validation-for="apellido1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="apellido2" class="control-label"></label>
+                <input asp-for="apellido2" class="form-control" />
+                <span asp-validation-for="apellido2" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="cedula" class="control-label"></label>
+                <input asp-for="cedula" class="form-control" />
+                <span asp-validation-for="cedula" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="padre" class="control-label"></label>
+                <input asp-for="padre" class="form-control" />
+                <span asp-validation-for="padre" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="madre" class="control-label"></label>
+                <input asp-for="madre" class="form-control" />
+                <span asp-validation-for="madre" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Abuelo_Paterno" class="control-label"></label>
+                <input asp-for="Abuelo_Paterno" class="form-control" />
+                <span asp-validation-for="Abuelo_Paterno" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Abuela_Paterno" class="control-label"></label>
+                <input asp-for="Abuela_Paterno" class="form-control" />
+                <span asp-validation-for="Abuela_Paterno" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Abuelo_Materno" class="control-label"></label>
+                <input asp-for="Abuelo_Materno" class="form-control" />
+                <span asp-validation-for="Abuelo_Materno" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Abuela_Materno" class="control-label"></label>
+                <input asp-for="Abuela_Materno" class="form-control" />
+                <span asp-validation-for="Abuela_Materno" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Padrino" class="control-label"></label>
+                <input asp-for="Padrino" class="form-control" />
+                <span asp-validation-for="Padrino" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Madrina" class="control-label"></label>
+                <input asp-for="Madrina" class="form-control" />
+                <span asp-validation-for="Madrina" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FechaNacimiento" class="control-label"></label>
+                <input asp-for="FechaNacimiento" class="form-control" />
+                <span asp-validation-for="FechaNacimiento" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Lugarnacimiento" class="control-label"></label>
+                <input asp-for="Lugarnacimiento" class="form-control" />
+                <span asp-validation-for="Lugarnacimiento" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="bautizos" class="control-label"></label>
+                <input asp-for="bautizos" class="form-control" />
+                <span asp-validation-for="bautizos" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="comunion" class="control-label"></label>
+                <input asp-for="comunion" class="form-control" />
+                <span asp-validation-for="comunion" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="confirmacion" class="control-label"></label>
+                <input asp-for="confirmacion" class="form-control" />
+                <span asp-validation-for="confirmacion" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="matrimonio" class="control-label"></label>
+                <input asp-for="matrimonio" class="form-control" />
+                <span asp-validation-for="matrimonio" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

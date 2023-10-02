@@ -1,0 +1,105 @@
+﻿@model SistemaWebParroquia.Models.Confirmacion
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Delete</h1>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Confirmacion</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Personas)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Personas)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.FechaConfirmacion)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.FechaConfirmacion)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.LugarConfirmacion)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.LugarConfirmacion)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.encargado)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.encargado)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.padrino)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.padrino)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.obispo)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.obispo)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.fechaBautizo)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.fechaBautizo)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.lugarBautizo)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.lugarBautizo)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.libro_C)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.libro_C)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.folio_C)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.folio_C)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.asiento_C)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.asiento_C)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.libro_B)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.libro_B)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.folio_B)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.folio_B)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.asiento_B)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.asiento_B)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="ID_confirmacion" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>

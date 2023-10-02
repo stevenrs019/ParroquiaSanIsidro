@@ -1,0 +1,113 @@
+﻿@model IEnumerable<SistemaWebParroquia.Models.Confirmacion>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Personas)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FechaConfirmacion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LugarConfirmacion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.encargado)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.padrino)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.obispo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.fechaBautizo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.lugarBautizo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.libro_C)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.folio_C)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.asiento_C)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.libro_B)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.folio_B)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.asiento_B)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Personas)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FechaConfirmacion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LugarConfirmacion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.encargado)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.padrino)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.obispo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.fechaBautizo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.lugarBautizo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.libro_C)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.folio_C)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.asiento_C)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.libro_B)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.folio_B)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.asiento_B)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.ID_confirmacion">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.ID_confirmacion">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.ID_confirmacion">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

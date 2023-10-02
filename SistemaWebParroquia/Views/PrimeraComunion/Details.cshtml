@@ -1,0 +1,90 @@
+﻿@model SistemaWebParroquia.Models.PrimeraComunion
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>PrimeraComunion</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Personas)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Personas)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.FechaComunion)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.FechaComunion)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.LugarComunion)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.LugarComunion)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.encargado)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.encargado)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.FechaBautizo)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.FechaBautizo)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.LugarBautizo)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.LugarBautizo)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.libro_P)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.libro_P)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.folio_P)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.folio_P)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.asiento_P)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.asiento_P)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.libro_B)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.libro_B)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.folio_B)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.folio_B)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.asiento_B)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.asiento_B)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.ID_comunion">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
