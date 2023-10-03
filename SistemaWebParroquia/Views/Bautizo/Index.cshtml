@@ -9,7 +9,7 @@
 <p>
     <a asp-action="Create">Create New</a>
 </p>
-<table class="table">
+<table class="table" id="TableLogs">
     <thead>
         <tr>
             <th>
@@ -117,3 +117,37 @@
 }
     </tbody>
 </table>
+@section scripts{
+    <script>
+
+        $(document).ready(function () {
+            $('#TableLogs').DataTable({
+                "language": {
+                    "url": "//cdn.datatables.net/plug-ins/1.13.2/i18n/es-ES.json"
+                },
+                dom: 'Bfrtip',
+                buttons: [
+                    '', '', ''
+                    , {
+                        extend: 'excelHtml5', className: "btn btn-outline-secondary btn-sm",
+                        exportOptions: {
+                            columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+                        }
+                    }
+                    , {
+                        extend: 'csvHtml5', className: "btn btn-outline-secondary btn-sm",
+                        exportOptions: {
+                            columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+                        }
+                    }
+                    , {
+                        extend: 'print', className: "btn btn-outline-secondary btn-sm",
+                        exportOptions: {
+                            columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+                        }
+                    }
+                ],
+            });
+        });
+    </script>
+}
